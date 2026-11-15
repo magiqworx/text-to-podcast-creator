@@ -68,6 +68,17 @@ src/
 
 `sources.json` contains citation metadata and links only. The original PDF files are local input files and do not need to be redistributed publicly.
 
+## Technical choices
+
+- **Python:** Used for a modular and maintainable processing pipeline.
+- **pypdf:** Extracts text from PDF articles.
+- **OpenAI API:** Transforms the articles into structured JSON podcast segments.
+- **JSON:** Separates speakers, voices, and spoken text.
+- **OpenAI Text-to-Speech:** Generates audio for Ana and Rui.
+- **pydub and ffmpeg:** Combines the speaker segments into one MP3.
+- **Gradio:** Provides the web interface.
+- **.env:** Keeps the API key separate from the source code.
+
 ## Sources
 
 The podcast script is based on these three articles. They are used as source material and are not presented as the work of this project’s author.
